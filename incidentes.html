@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/38b9922266.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/dofon.png">
+    <title>Reporte de incidentes RCRT</title>
+</head>
+<body>
+    <form class="form-register" action="reportes.php" method="post">
+        <h2>Reporte de incidentes en pista</h2>
+        <br>
+        <p>Antes de realizar el reporte es completamente necesario haber leido el reglamento para competiciones RedColRacing</p>
+        <br>
+        <br>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" required>
+            <label class="form-check-label text-muted"> He leído el reglamento para competiciones RedColRacing Team</label>
+        </div>
+        <br>
+
+        <label>Evento en el que ocurrió el incidente</label>
+        <input class="controls" type="text" name="evento" id="evento" placeholder="Evento del incidente" required>
+
+        <label>Nombre del denunciante</label>
+        <input class="controls" type="text" name="denunciante" id="denunciante" placeholder="Gamertag del denunciante">
+
+        <label>Nombre del denunciado</label>
+        <input class="controls" type="text" name="denunciado" id="denunciado" placeholder="Gamertag del denunciado">
+
+        <label>Número de vuelta</label>
+        <input class="controls" type="text" name="vuelta" id="vuelta" placeholder="Vuelta del incidente">
+
+        <label>Link de las pruebas</label>
+        <input class="controls" type="url" name="link" id="link" placeholder="Link de las pruebas">
+
+            <div class="butons">
+                <a href="reglamento.html"><button class="hola">Reportar</button></a>
+                </div>
+    </form>
+</body>
+</html>
